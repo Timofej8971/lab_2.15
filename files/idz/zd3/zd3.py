@@ -19,13 +19,15 @@ if __name__ == '__main__':
             w = os.access(file_path, os.W_OK)
             x = os.access(file_path, os.X_OK)
             print('Выбранный файл имеет следующие параметры доступа:  \n',
-                  f, '\n', r, '\n', w, '\n', x, '\n')
+                  f, '\n', r, '\n', w, '\n', x, '\n'
+                )
 
         elif command == 'help':
             print('Cписок команд:\n'
                   'exit - выход из программы'
                   'check - проверка доступа'
-                  'help - помощь')
+                  'help - помощь'
+                 )
 
         else:
             print(f"Неизвестная команда {command}", file=sys.stderr)
